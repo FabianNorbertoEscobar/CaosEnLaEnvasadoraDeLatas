@@ -8,7 +8,12 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) {
-		//generadorCaso7();
+		// generadorCaso7();
+
+		File entrada = new File("latas.in");
+		File salida = new File("latas.out");
+		EnvasadoraDeLatas envasadora = new EnvasadoraDeLatas(entrada, salida);
+		envasadora.resolver();
 	}
 
 	@SuppressWarnings("unused")
