@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) {
-		// generadorCaso7();
+		//generadorCaso7();
 
 		File entrada = new File("latas.in");
 		File salida = new File("latas.out");
@@ -34,9 +34,10 @@ public class Main {
 			for (int i = 0; i < 5; i++) {
 				buffer.write("G");
 			}
+			buffer.write("F");
 			buffer.close();
 		} catch (IOException e) {
-			System.out.println("Error al generar el archivo de entrada del cas0 07 del lote de prueba");
+			System.out.println("Error al generar el archivo de entrada del caso 07 del lote de prueba");
 			e.printStackTrace();
 		}
 	}
